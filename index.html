@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KUAYS STUDY CIRCLE</title>
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #dbe8eb;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      background-color: #b3e0db;
+      padding: 10px;
+      border-radius: 20px;
+      margin: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      border-right: 4px solid #000;
+      padding-right: 20px;
+    }
+
+    nav a:last-child {
+      border-right: none;
+    }
+
+    nav a:hover {
+      background-color: purple;
+      color: white;
+      border-radius: 100px;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .text-section {
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .logo-section img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      border: 5px solid #b3e0db;
+    }
+
+    .logo-section:hover {
+      transform: scale(1.05);
+    }
+
+    /* CTA Button */
+    .cta-button {
+      background-color: white;
+      color: purple;
+      padding: 15px 30px;
+      font-size: 1.8rem;
+      border-radius: 30px;
+      border: 2px solid purple;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .cta-button:hover {
+      background-color: purple;
+      color: white;
+    }
+
+    .event-section {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f3b44;
+      color: white;
+    }
+
+    .event-carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      padding: 20px;
+      scroll-behavior: smooth;
+    }
+
+    .event-card {
+      min-width: 250px;
+      flex: 0 0 auto;
+      color: black;
+      border-radius: 10px;
+      overflow: hidden;
+      scroll-snap-align: start;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .event-card:hover {
+      transform: scale(1.05);
+    }
+
+    .event-info {
+      padding: 10px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1f3b44;
+      color: white;
+      padding: 40px 20px 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-brand h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    .footer-brand p {
+      max-width: 300px;
+      line-height: 1.5;
+    }
+
+    .footer-links h3,
+    .footer-social h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer-links .social-icons a img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .footer-social p {
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 20px;
+        padding: 10px 0;
+        border: none;
+      }
+
+      .main-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .text-section {
+        padding: 0 15px;
+      }
+
+      .cta-button {
+        font-size: 1.4rem;
+        padding: 12px 25px;
+        margin-top: 10px;
+      }
+
+      .logo-section img {
+        max-width: 200px;
+      }
+
+      .event-card img {
+        height: 200px;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+      }
+
+      .footer-links .social-icons {
+        justify-content: center;
+      }
+
+      .footer-links .social-icons a img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .footer-brand p {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Academic.html">Academic</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <div class="text-section">
+      <h3>
+        📚 KUAYS Study Circle – Excellence in Education for Grades 7 to 10 <br>
+        🏫Welcome to KUAYS Study Circle, your trusted destination for quality education for students of 7th, 8th, 9th, and 10th standards. <br>
+        We offer expert tuition for all subjects across State Board, CBSE, and ICSE curricula in English, Hindi, Marathi, and Urdu mediums.
+      </h3>
+      <h1>What We Offer</h1>
+      <h4>
+        🎓 Tuitions for Classes 7th, 8th, 9th & 10th<br>
+        📘 All Subjects | All Mediums (English | Hindi | Marathi | Urdu)<br>
+        ✅ Maharashtra State Board<br>
+        ✅ CBSE<br>
+        ✅ ICSE<br><br>
+        👩‍🏫 Concept-Based Teaching<br>
+        📈 Regular Tests & Progress Reports<br>
+        📋 Individual Attention & Doubt Clearing<br>
+        🏆 Experienced & Dedicated Teachers<br>
+        ✨ Special Focus on Weak Students<br>
+        🔔 Admissions Open – Limited Seats!<br>
+        📅 Enroll Today for Academic Success!<br>
+      </h4>
+      <h2>💬 “Where Every Child Learns, Grows & Shines!”</h2>
+      <div style="text-align: center;">
+        <button class="cta-button">Join Now</button>
+      </div>
+    </div>
+
+    <div class="logo-section">
+      <img src="SYMBOL.JPG.jpg" alt="KUAYS Study Circle Logo">
+    </div>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="event-section">
+    <div class="event-carousel">
+      <div class="event-card"><img src="first.jpg" alt="Event 1"></div>
+      <div class="event-card"><img src="second.jpg" alt="Event 2"></div>
+      <div class="event-card"><img src="third.jpg" alt="Event 3"></div>
+      <div class="event-card"><img src="fourth.jpg" alt="Event 4"></div>
+      <div class="event-card"><img src="fifth.jpg" alt="Event 5"></div>
+      <div class="event-card"><img src="sixth.png" alt="Event 6"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>KUAYS Study Circle</h2>
+        <p>Where Every Child Learns, Grows & Shines!</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="whatsapp logo.jpg" alt="WhatsApp"></a>
+          <a href="#"><img src="facebook logo.jpg" alt="Facebook"></a>
+          <a href="#"><img src="instagram logo.jpg" alt="Instagram"></a>
+          <a href="#"><img src="LinkedIn logo.jpg" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <h3>Contact Us</h3>
+        <div class="social-icons">
+          <p>
+            E-mail: kuayssc@gmail.com<br>
+            Contact: +91 8149728072<br>
+            Address: Opposite Metro Heights Gorewada,<br>
+            Mankapur Ring Road, Nagpur, 440013, Maharashtra
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 KUAYS Study Circle. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
