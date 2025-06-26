@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #dbe8eb;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      background-color: #b3e0db;
+      padding: 10px;
+      border-radius: 20px;
+      margin: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 22px;
+      font-weight: bold;
+      border-right: 4px solid #000;
+      padding-right: 25px;
+    }
+
+    nav a:last-child {
+      border-right: none;
+    }
+
+    nav a:hover {
+      background-color: purple;
+      color: white;
+      border-radius: 100px;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 20px;
+      flex-wrap: wrap;
+      margin: -20px 0;
+    }
+
+    .text-section {
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .logo-section {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .logo-section img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      border: 5px solid #b3e0db;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #c4cbc2;
+      padding: 50px 30px;
+      color: black;
+      text-align: center;
+      border-radius: 15px;
+      width: 150px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      background-color: #fcfbfb;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background-color: #1f3b44;
+      color: white;
+      padding: 40px 20px 10px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-brand h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    .footer-brand p {
+      max-width: 300px;
+      line-height: 1.5;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-links ul a img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+
+    .footer-social .social-icons {
+      font-size: 1rem;
+      color: white;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        border: none;
+        font-size: 20px;
+        padding: 5px 0;
+      }
+
+      .text-section {
+        text-align: center;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-links,
+      .footer-social {
+        margin-top: 20px;
+      }
+
+      .footer-links ul {
+        justify-content: center;
+      }
+
+      .logo-section img {
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Academic.html">Academic</a>
+  </nav>
+
+  <!-- Logo Section -->
+  <div class="logo-section">
+    <img src="SYMBOL.JPG.jpg" alt="KUAYS Study Circle Logo" />
+  </div>
+
+  <!-- Class Cards -->
+  <div class="card-container">
+    <a href="SUBJECT07.html"><div class="card">CLASS 7TH</div></a>
+    <a href="SUBJECT08.html"><div class="card">CLASS 8TH</div></a>
+    <a href="SUBJECT09.html"><div class="card">CLASS 9TH</div></a>
+    <a href="SUBJECT010.html"><div class="card">CLASS 10TH</div></a>
+  </div>
+
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>KUAYS Study Circle</h2>
+        <p>Where Every Child Learns, Grows & Shines!</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Follow Us</h3>
+        <ul>
+          <a href="#"><img src="whatsapp logo.jpg" alt="WhatsApp"></a>
+          <a href="#"><img src="facebook logo.jpg" alt="Facebook"></a>
+          <a href="#"><img src="instagram logo.jpg" alt="Instagram"></a>
+          <a href="#"><img src="Linkedin logo.jpg" alt="LinkedIn"></a>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>Contact Us</h3>
+        <div class="social-icons">
+          <p>
+            E-mail: kuayssc@gmail.com<br>
+            Contact Number: +91 8149728072<br>
+            Address: Opposite Metro Heights, Gorewada<br>
+            Mankapur Ring Road, Nagpur, 440013, Maharashtra
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 KUAYS Study Circle. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
